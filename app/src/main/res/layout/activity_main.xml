@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@color/black"
+
+    tools:context=".MainActivity"
+
+    android:orientation="vertical">
+
+
+
+    <TextView
+
+        android:id="@+id/title"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+
+        android:shadowColor="@color/white"
+
+        android:shadowDx="5"
+
+        android:shadowDy="1"
+
+        android:shadowRadius="12"
+
+        android:text="Star Simulator"
+
+        android:layout_marginTop="10dp"
+
+        android:textAlignment="center"
+
+        android:textAllCaps="true"
+
+        android:textColor="@color/white"
+
+        android:textSize="25sp"
+
+        android:textStyle="bold" />
+
+
+    <ImageView
+
+        android:id="@+id/the_star_image"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp"
+
+        android:layout_marginTop="30dp"
+
+        android:layout_below="@+id/title"
+
+        android:src="@drawable/star" />
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:gravity="center_horizontal"
+
+        android:padding="50dp"
+
+        android:layout_below="@+id/the_star_image"
+
+        >
+
+
+
+
+        <Button
+            android:id="@+id/new_game"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:text="New Game"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"/>
+
+        <Button
+
+            android:id="@+id/load_game"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+
+            android:textColor="@color/black"
+
+            android:layout_below="@id/new_game"
+
+            android:layout_marginTop="20dp"
+
+            android:padding="10dp"
+
+            android:elevation="4dp"
+
+            android:backgroundTint="@color/white"
+
+            android:text="Load Game"
+
+            android:textStyle="bold"/>
+
+
+        <Button
+
+            android:id="@+id/settings"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+
+            android:textColor="@color/black"
+
+            android:layout_below="@+id/load_game"
+
+            android:layout_marginTop="20dp"
+
+            android:padding="10dp"
+
+            android:elevation="4dp"
+
+            android:textStyle="bold"
+
+            android:backgroundTint="@color/white"
+
+            android:text="Settings" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
