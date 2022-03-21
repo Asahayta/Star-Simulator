@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SettingsMenu"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:shadowDx="5"
+        android:shadowDy="1"
+        android:shadowRadius="12"
+        android:text="@string/settings"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="314dp"
+        android:layout_height="564dp"
+        android:gravity="center_horizontal"
+        android:padding="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+
+        <Button
+            android:id="@+id/audio_effects"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="Audio Effects: ON"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/background_music"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/audio_effects"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="Background Music: ON"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/the_star_image"
+            android:layout_width="175dp"
+            android:layout_height="303dp"
+            android:layout_marginTop="135dp"
+            android:src="@drawable/music"
+            android:contentDescription="TODO" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
